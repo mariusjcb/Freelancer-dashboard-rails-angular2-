@@ -1,7 +1,20 @@
-<h1>Proposal List</h1>
+<h1 class="headline">Proposal List</h1>
 
-<div *ngFor="let proposal of proposals">
-  <a routerLink="/proposal/{{ proposal.id}}" >
-    Proposal to <b>{{ proposal.customer }}</b>
-  </a>: {{ proposal.client_email }}
+<div class="card-columns">
+  <div class="card text-center" *ngFor="let proposal of proposals">
+    <div class="card-header">
+      {{ proposal.weeks_to_complete }} weeks
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ proposal.customer }}</h5>
+      <p class="card-text">
+        Tools used in this project: {{ proposal.tools }}.
+        Open <a href="{{ proposal.portofolio_url }}">client portofolio</a> for more details.
+      </p>
+      <a routerLink="/proposal/{{ proposal.id}}" class="btn btn-primary">Open Proposal</a>
+    </div>
+    <div class="card-footer text-muted">
+      {{ proposal.estimated_hours * proposal.hourly_rate | currency:'$':false:'.0' }} / {{ proposal.estimated_hours }} hours
+    </div>
+  </div>
 </div>

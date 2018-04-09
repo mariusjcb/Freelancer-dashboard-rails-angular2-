@@ -1,0 +1,7 @@
+<h1>Proposal List</h1>
+
+<div *ngFor="let proposal of proposals">
+  <a routerLink="/proposal/{{ proposal.id}}" >
+    Proposal to <b>{{ proposal.customer }}</b>
+  </a>: {{ proposal.client_email }}
+</div>

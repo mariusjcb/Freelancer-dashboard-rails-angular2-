@@ -15,21 +15,42 @@ export class DocumentsComponent {
       description: 'Here is a great document for testing',
       file_url: 'http://google.com/',
       updated_at: '08/04/18',
-      image_url: 'http://google.com/'
+      image_url: 'https://picsum.photos/480/280/?random'
     },
     {
       title: 'My second document',
       description: 'Here is another great document for testing',
       file_url: 'http://google.com/',
       updated_at: '08/04/18',
-      image_url: 'http://google.com/'
+      image_url: 'https://picsum.photos/430/280/?random'
     },
     {
       title: 'My last document',
       description: 'Here is last great document for testing',
       file_url: 'http://google.com/',
       updated_at: '08/04/18',
-      image_url: 'http://google.com/'
+      image_url: 'https://picsum.photos/420/220/?random'
+    },
+    {
+      title: 'My first document',
+      description: 'Here is a great document for testing',
+      file_url: 'http://google.com/',
+      updated_at: '08/04/18',
+      image_url: 'https://picsum.photos/480/280/?random'
+    },
+    {
+      title: 'My second document',
+      description: 'Here is another great document for testing',
+      file_url: 'http://google.com/',
+      updated_at: '08/04/18',
+      image_url: 'https://picsum.photos/430/280/?random'
+    },
+    {
+      title: 'My last document',
+      description: 'Here is last great document for testing',
+      file_url: 'http://google.com/',
+      updated_at: '08/04/18',
+      image_url: 'https://picsum.photos/420/220/?random'
     },
   ]
 }
